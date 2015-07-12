@@ -108,7 +108,7 @@ jQuery(function($) {
     }
   });
 
-  $('#portal-breadcrumbs .flyoutBreadcrumbs a.loadChildren').live('click', function(e){
+  $('#portal-breadcrumbs .flyoutBreadcrumbs').on('click', 'a.loadChildren', function(e){
     e.preventDefault();
     var me = $(this);
     var parent = me.parent();
